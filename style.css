@@ -1,0 +1,82 @@
+/* Fonts */
+.happy-monkey-regular {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+.smokum-regular {
+    font-family: "Smokum", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+/* Regular Stuff */
+* {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to bottom right, #ffffff,#BF0D3E,#00205B) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', Regular;
+    font-size: 24px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Smokum', Regular;
+}
+
+header nav {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'Arial', Regular;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+}
+
+
+
+#Texas_sign {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 400px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
