@@ -11,33 +11,33 @@
     font-style: normal;
 }  
 
-/* Regular Stuff */
+/* Base Styles */
 * {
     font-size: 16px;
-    color: #000000;
+    color: #FFFFFF;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Header Styles */
 header {
-    background-image: linear-gradient(to bottom right, #ffffff,#BF0D3E,#00205B) ;
+    background-image: linear-gradient(to bottom right,  #00205B, #BF0D3E, #ffffff);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ;
-    color: #ffffff;
     padding: 20px;
     text-align: center;
-    font-family: 'Arial', Regular;
+    font-family: 'Arial', sans-serif;
     font-size: 24px;
+    border: 1px solid #000000;
 }
 
 header h1 {
     font-size: 36px;
     margin: 0;
-    font-family: 'Smokum', Regular;
+    font-family: 'Smokum', serif;
 }
 
 header nav {
@@ -50,33 +50,139 @@ header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 header nav ul li {
     display: inline-block;
     margin-right: 10px;
-    font-family: 'Arial', Regular;
-    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    padding:  5px 30px;
 }
 
 header nav ul li a {
+    text-shadow: 0 0 0 2px black;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 header nav ul li a:hover {
     color: #000000;
 }
 
+/* Hero Section */
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-
-#Texas_sign {
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: 50% 50%;
+#Texas_flag {
     height: 400px;
     width: 100%;
+    max-width: 1000px;
     display: block;
     margin: auto;
+    border-radius: 10px;
 }
+
+/* Main Content */
+#main {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #00205B;
+    max-width: 1000px;
+    color: #ffffff;
+    flex: 2;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Aside Styles */
+#aside {
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #BF0D3E;
+    min-width: 300px;
+    max-width: 500px;
+    color: #ffffff;
+    flex: 1;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+aside ul li span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.attraction-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Container for main and aside */
+#hero-section > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00205B;
+    color: #ffffff;
+}
+
+
+
+
