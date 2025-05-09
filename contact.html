@@ -22,39 +22,73 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="contact-form-container">
-                <h2>Ask a Question About Texas</h2>
-                <form id="contactForm" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstName" required>
+        <div id="hero-section">
+            <div>
+                <main id="main">
+                    <section class="content-row" id="main_section">
+                        <div class="contact-form-container">
+                            <h2>Ask a Question About Texas</h2>
+                            <form id="contactForm" action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="confirmEmail">Confirm Email Address:</label>
+                                    <input type="email" id="confirmEmail" name="confirmEmail" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="question">Your Question:</label>
+                                    <textarea id="question" name="question" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="submit-button">Submit Question</button>
+                            </form>
+                        </div>
+                    </section>
+                </main>
+
+                <aside id="aside">
+                    <div class="city-info">
+                        <h2>Contact Information</h2>
+                        <ol>
+                            <li>
+                                <strong>Email</strong>
+                                <span>info@texas.com</span>
+                            </li>
+                            <li>
+                                <strong>Phone</strong>
+                                <span>(123) 456-7890</span>
+                            </li>
+                            <li>
+                                <strong>BusinessHours</strong>
+                                <span>Monday - Friday: 9 AM - 5 PM CST</span>
+                            </li>
+                            <li>
+                                <strong>Address</strong>
+                                <span>123 Texas Way<br>Austin, TX 12345</span>
+                            </li>
+                            <li>
+                                <strong>Response Time</strong>
+                                <span>Within 24-48 business hours</span>
+                            </li>
+                        </ol>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="confirmEmail">Confirm Email Address:</label>
-                        <input type="email" id="confirmEmail" name="confirmEmail" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="question">Your Question:</label>
-                        <textarea id="question" name="question" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-button">Submit Question</button>
-                </form>
+                </aside>
             </div>
-        </main>
+        </div>
         <footer>
             <p>&copy; 2025 Reginald Francis | <a href="contact.html">Ask a Question?</a> | <a href="https://www.texas.gov" target="_blank" rel="noopener noreferrer">Texas Government Website</a></p>
         </footer>
